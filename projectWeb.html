@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hensel的個人網頁</title>
+    <meta name="author" content="Hensel Huang" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/bubble.css" />
+  </head>
+  <body>
+    <nav>
+      <button id="hamburger-btn" aria-label="切換導覽選單">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul id="nav-links">
+        <li>
+          <a href="./index.html">關於 Hensel</a>
+        </li>
+        <li><a href="./contact.html">聯絡方式</a></li>
+        <li>
+          <a class="active" href="#">網頁全端專案</a>
+        </li>
+        <li>
+          <a href="./projectJave.html">Java專案</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+      </div>
+
+      <section class="project">
+        <h1>我的網頁全端專案</h1>
+        <p>以下是我完成的一些網頁全端專案：</p>
+        <div class="project-grid">
+          <div class="project-item">
+            <h2>專案1：圍棋網站</h2>
+
+            <img
+              src="./images/wikiwebsite.png"
+              alt="圍棋網站"
+              class="project-img"
+            />
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML / CSS</td>
+                  <td>
+                    建構一個五頁式的靜態資訊網站，包含表格、列表與圖文排版。
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Flexbox</td>
+                  <td>應用 display: flex 完成導覽列及主內容的排版佈局。</td>
+                </tr>
+                <tr>
+                  <td>響應式網頁 (RWD)</td>
+                  <td>
+                    使用 Media Query 在小螢幕上自動將導覽列切換為垂直排列。
+                  </td>
+                </tr>
+                <tr>
+                  <td>Google Charts</td>
+                  <td>
+                    於「日本棋院」頁面中，引入 Google Charts
+                    函式庫，將獎金數據視覺化為圓餅圖。
+                  </td>
+                </tr>
+                <tr>
+                  <td>外部 JS 函式庫</td>
+                  <td>引入 canvas-nest.js 實現動態背景特效。</td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              target="_blank"
+              href="https://hsiu0308.github.io/go-info-website/"
+              class="project-link"
+              >前往專案1</a
+            >
+          </div>
+
+          <div class="project-item">
+            <h2>專案2：日本旅遊網站</h2>
+
+            <img
+              src="./images/japantravel.png"
+              alt="日本旅遊網站"
+              class="project-img"
+            />
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SCSS (Sassy CSS)</td>
+                  <td>
+                    使用 SCSS 變數（$theme-color）和巢狀結構來撰寫與管理 CSS。
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS 佈局</td>
+                  <td>
+                    應用 position: fixed 製作全頁固定背景，並使用 position:
+                    sticky 實現導覽列。
+                  </td>
+                </tr>
+                <tr>
+                  <td>響應式網頁 (RWD)</td>
+                  <td>
+                    使用 Media Query，在螢幕寬度小於 950px
+                    時將導覽列改為垂直堆疊。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (ES6)</td>
+                  <td>
+                    使用 setInterval 函式，每 3 秒自動更換 Hero
+                    區塊的背景圖片，實現自動輪播效果。
+                  </td>
+                </tr>
+                <tr>
+                  <td>整合外部資源</td>
+                  <td>
+                    嵌入 Google Maps iframe 顯示地圖，並使用 Font Awesome
+                    圖示庫。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              target="_blank"
+              href="https://hsiu0308.github.io/japan-travel-website/"
+              class="project-link"
+              >前往專案2</a
+            >
+          </div>
+
+          <div class="project-item">
+            <h2>專案3：個人網站</h2>
+
+            <img
+              src="./images/個人網站.png"
+              alt="個人網站"
+              class="project-img"
+            />
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SCSS (Sassy CSS)</td>
+                  <td>
+                    使用巢狀結構 (Nesting) 和 <code>@media</code> Query 撰寫 RWD
+                    響應式網頁樣式，並管理 CSS 變數。
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Flexbox &amp; Grid</td>
+                  <td>
+                    應用 Flexbox 於導覽列和頁首排版；使用 Grid
+                    於專案卡片排版，並自適應欄位寬度。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (Class)</td>
+                  <td>
+                    撰寫 ES6 <code>class Typewriter</code>
+                    來實現首頁「關於我」的動態打字機特效。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (RWD)</td>
+                  <td>
+                    實作漢堡選單 (Hamburger Menu) 功能，在小螢幕上點擊切換
+                    <code>.active</code> class 來顯示/隱藏導覽列。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (DOM)</td>
+                  <td>
+                    監聽
+                    <code>window.scroll</code>
+                    事件，在頁面滾動時動態為導覽列切換
+                    <code>.scrolled</code> class 以增加陰影。
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS 動畫 &amp; Bootstrap</td>
+                  <td>
+                    利用 <code>@keyframes</code> 製作背景漂浮泡泡動畫；並整合
+                    Bootstrap 用於技能進度條 (Progress Bar) 展示。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a target="_blank" href="./index.html" class="project-link"
+              >前往專案3</a
+            >
+          </div>
+
+          <div class="project-item">
+            <h2>專案4：GPA成績計算網站</h2>
+
+            <img
+              src="./images/gpa.png"
+              alt="GPA成績計算網站"
+              class="project-img"
+            />
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML / CSS</td>
+                  <td>
+                    建立成績輸入表單的介面，並設計整體視覺樣式與即時顏色反饋。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (DOM)</td>
+                  <td>
+                    使用 DOM 操作，實作表單欄位的動態「新增」與「刪除」功能。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (Logic)</td>
+                  <td>
+                    即時監聽使用者輸入事件，動態計算加權平均 GPA
+                    並更新顯示結果。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (Algorithm)</td>
+                  <td>
+                    實作 Merge Sort (合併排序)
+                    演算法，提供成績「升序」與「降序」排序功能。
+                  </td>
+                </tr>
+                <tr>
+                  <td>GSAP</td>
+                  <td>
+                    應用 GSAP 的 TimelineMax
+                    函式庫，製作網頁載入時的ヒーロー(主要視覺區塊)開場動畫。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <a
+              target="_blank"
+              href="https://hsiu0308.github.io/gpa-calculator/"
+              class="project-link"
+              >前往專案4</a
+            >
+          </div>
+          <div class="project-item">
+            <h2>專案5：貪食蛇遊戲</h2>
+
+            <img
+              src="./images/snakegame.png"
+              alt="貪食蛇遊戲"
+              class="project-img"
+            />
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML Canvas</td>
+                  <td>
+                    使用 HTML 的
+                    <code>&lt;canvas&gt;</code> 元素作為遊戲畫布，並透過 2D 繪圖
+                    API (<code>getContext("2d")</code>) 繪製所有遊戲物件。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (遊戲邏輯)</td>
+                  <td>
+                    使用 <code>setInterval</code> 建立遊戲迴圈 (Game
+                    Loop)，並透過陣列 (Array) 存儲與更新蛇的身體位置資料。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (事件監聽)</td>
+                  <td>
+                    監聽 <code>keydown</code>
+                    事件，並透過在遊戲迴圈中「移除」及「重新加入」監聽器，鎖定每幀僅能變更一次方向，藉此防止
+                    180 度迴轉。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (碰撞偵測)</td>
+                  <td>
+                    編寫邏輯來偵測蛇的頭部 (<code>newHead</code>) 是否與食物
+                    (<code>myFruit</code>) 或自身身體 (<code>snake</code>)
+                    重疊，以觸發得分或遊戲結束。
+                  </td>
+                </tr>
+                <tr>
+                  <td>LocalStorage</td>
+                  <td>
+                    使用 <code>localStorage.getItem</code> 和
+                    <code>localStorage.setItem</code>
+                    在瀏覽器中永久保存玩家的「最高分數」(<code>highestScore</code>)。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              target="_blank"
+              href="https://hsiu0308.github.io/javascript-snake-game/"
+              class="project-link"
+              >前往專案5</a
+            >
+          </div>
+          <div class="project-item">
+            <h2>專案6：彈跳球遊戲</h2>
+
+            <img
+              src="./images/BallBreaker.png"
+              alt="彈跳球遊戲"
+              class="project-img"
+            />
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML Canvas</td>
+                  <td>
+                    使用 <code>&lt;canvas&gt;</code> 元素作為遊戲畫布，並透過 2D
+                    繪圖 API (<code>getContext("2d")</code>) 繪製所有遊戲物件。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (遊戲狀態)</td>
+                  <td>
+                    使用「開始遊戲」按鈕觸發 <code>setInterval</code>
+                    來啟動遊戲迴圈 (Game Loop)，並在遊戲勝利時
+                    <code>clearInterval</code> 停止迴圈。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (座標修正)</td>
+                  <td>
+                    使用 <code>getBoundingClientRect()</code>
+                    取得 Canvas 的邊界，以修正滑鼠事件 (<code>e.clientX</code>)
+                    的座標，確保反彈板能精確跟隨鼠標。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (事件監聽)</td>
+                  <td>
+                    監聽 <code>mousemove</code> 事件讓反彈板 X
+                    軸即時跟隨；並使用 <code>mousedown</code> /
+                    <code>mouseup</code>
+                    事件切換旗標，僅在「按住」狀態下才允許 Y 軸移動。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (Class)</td>
+                  <td>
+                    使用 ES6 的 <code>class</code> 關鍵字定義
+                    <code>Brick</code> (磚塊) 類別，並用
+                    <code>Math.random</code> 隨機生成磚塊位置。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              target="_blank"
+              href="https://hsiu0308.github.io/js-breakout-game/"
+              class="project-link"
+              >前往專案6</a
+            >
+          </div>
+          <div class="project-item">
+            <h2>專案7：Google登入網站</h2>
+
+            <img
+              src="./images/comingsoon.png"
+              alt="Google登入網站"
+              class="project-img"
+            />
+            <p>HTML、CSS、JavaScript...</p>
+            <a target="_blank" href="#" class="project-link">尚未開放</a>
+          </div>
+          <div class="project-item">
+            <h2>專案8：圖片網站</h2>
+
+            <img
+              src="./images/comingsoon.png"
+              alt="圖片網站"
+              class="project-img"
+            />
+            <p>HTML、CSS、JavaScript...</p>
+            <a target="_blank" href="#" class="project-link">尚未開放</a>
+          </div>
+          <div class="project-item">
+            <h2>專案9：MERN專案</h2>
+
+            <img
+              src="./images/comingsoon.png"
+              alt="MERN專案"
+              class="project-img"
+            />
+            <p>HTML、CSS、JavaScript...</p>
+            <a target="_blank" href="#" class="project-link">尚未開放</a>
+          </div>
+        </div>
+        <p class="project-end-marker">--- 網頁全端專案列表結束 ---</p>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
