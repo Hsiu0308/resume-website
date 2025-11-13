@@ -422,7 +422,81 @@
             >
           </div>
           <div class="project-item">
-            <h2>專案7：Google登入網站</h2>
+            <h2>專案7：ACO視覺化演算法</h2>
+
+            <img
+              src="./images/ACO.png"
+              alt="ACO視覺化演算法"
+              class="project-img"
+            />
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML Canvas API</td>
+                  <td>
+                    使用 <code>&lt;canvas&gt;</code>
+                    元素，透過 2D 繪圖 API (<code>getContext("2d")</code>)
+                    即時繪製所有視覺元件，包含城市、螞蟻、費洛蒙路徑與最佳路徑。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (動畫迴圈)</td>
+                  <td>
+                    利用 <code>requestAnimationFrame</code> 打造高效能的主迴圈
+                    (<code>mainLoop</code>)，不斷更新與重繪螞蟻的動態位置，實現流暢的即時模擬。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (ES6 Class)</td>
+                  <td>
+                    使用
+                    <code>class Ant</code>
+                    以物件導向方式封裝每隻螞蟻的狀態，包含獨立的路徑
+                    (<code>path</code>)、位置 (<code>x, y</code>) 與移動
+                    (<code>update</code>) 邏輯。
+                  </td>
+                </tr>
+                <tr>
+                  <td>演算法實作 (ACO)</td>
+                  <td>
+                    完整實作蟻群最佳化 (Ant Colony Optimization)
+                    演算法，包含機率計算 (<code>calculateProbs</code>)
+                    與費洛蒙的揮發/放置 (<code>updatePheromones</code>)。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JavaScript (DOM)</td>
+                  <td>
+                    透過 <code>addEventListener</code> 綁定 HTML
+                    拉桿與按鈕，實現「即時調整參數」(如螞蟻數量、Alpha)
+                    與「控制模擬」(暫停/重啟) 的功能。
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Flexbox</td>
+                  <td>
+                    應用 <code>display: flex</code>
+                    佈局，將畫布 (<code>canvas</code>) 與設定面板
+                    (<code>#controls</code>) 完美地並排顯示。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              target="_blank"
+              href="https://hsiu0308.github.io/ACO-Canvas-Simulator/"
+              class="project-link"
+              >前往專案7</a
+            >
+          </div>
+          <div class="project-item">
+            <h2>專案8：Google登入網站</h2>
 
             <img
               src="./images/comingsoon.png"
@@ -433,7 +507,7 @@
             <a target="_blank" href="#" class="project-link">尚未開放</a>
           </div>
           <div class="project-item">
-            <h2>專案8：圖片網站</h2>
+            <h2>專案9：圖片網站</h2>
 
             <img
               src="./images/comingsoon.png"
@@ -444,13 +518,9 @@
             <a target="_blank" href="#" class="project-link">尚未開放</a>
           </div>
           <div class="project-item">
-            <h2>專案9：MERN專案</h2>
+            <h2>專案10：MERN</h2>
 
-            <img
-              src="./images/comingsoon.png"
-              alt="MERN專案"
-              class="project-img"
-            />
+            <img src="./images/comingsoon.png" alt="MERN" class="project-img" />
             <p>HTML、CSS、JavaScript...</p>
             <a target="_blank" href="#" class="project-link">尚未開放</a>
           </div>
