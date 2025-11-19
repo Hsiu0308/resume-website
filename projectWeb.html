@@ -496,15 +496,67 @@
             >
           </div>
           <div class="project-item">
-            <h2>專案8：Google登入網站</h2>
+            <h2>專案8：雲端便利貼網站</h2>
 
             <img
-              src="./images/comingsoon.png"
-              alt="Google登入網站"
+              src="./images/首頁.png"
+              alt="雲端便利貼網站"
               class="project-img"
             />
-            <p>HTML、CSS、JavaScript...</p>
-            <a target="_blank" href="#" class="project-link">尚未開放</a>
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Node.js & Express</td>
+                  <td>
+                    建構後端伺服器，設計 RESTful 風格路由以處理 CRUD
+                    請求，並運用 Middleware 管理請求流程。
+                  </td>
+                </tr>
+                <tr>
+                  <td>EJS 樣板引擎</td>
+                  <td>
+                    採用伺服器端渲染 (SSR) 技術動態生成 HTML，並使用 Partials
+                    (<code>include</code>) 模組化管理導覽列與頁首。
+                  </td>
+                </tr>
+                <tr>
+                  <td>MongoDB & Mongoose</td>
+                  <td>
+                    使用 Mongoose ODM 定義資料模型
+                    (Schema)，將使用者資料與便利貼內容持久化儲存於 MongoDB Atlas
+                    雲端資料庫。
+                  </td>
+                </tr>
+                <tr>
+                  <td>Passport.js 驗證</td>
+                  <td>
+                    整合 <code>passport-google-oauth20</code> 實作 Google
+                    第三方登入，並搭配
+                    <code>passport-local</code> 處理本地帳號驗證。
+                  </td>
+                </tr>
+                <tr>
+                  <td>Session & Security</td>
+                  <td>
+                    使用 <code>express-session</code> 結合
+                    <code>connect-mongo</code> 將使用者狀態儲存於資料庫，並透過
+                    <code>bcrypt</code> 對密碼進行加密保護。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              target="_blank"
+              href="https://cloud-sticky-notes.onrender.com"
+              class="project-link"
+              >前往專案8</a
+            >
           </div>
           <div class="project-item">
             <h2>專案9：圖片網站</h2>
