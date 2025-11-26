@@ -559,15 +559,69 @@
             >
           </div>
           <div class="project-item">
-            <h2>專案9：圖片網站</h2>
+            <h2>專案9：圖片素材網站</h2>
 
             <img
-              src="./images/comingsoon.png"
-              alt="圖片網站"
+              src="./images/圖片素材.png"
+              alt="圖片素材網站"
               class="project-img"
             />
-            <p>HTML、CSS、JavaScript...</p>
-            <a target="_blank" href="#" class="project-link">尚未開放</a>
+            <!-- 專案: React 圖片搜尋網站 (Pexels Search) - 技術表格 -->
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>React.js (Hooks)</td>
+                  <td>
+                    使用 <strong>Functional Components</strong> 與
+                    <strong>Hooks</strong> (<code>useState</code>,
+                    <code>useEffect</code>)
+                    管理搜尋關鍵字、圖片列表等應用程式狀態。
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pexels API 串接</td>
+                  <td>
+                    申請並串接 Pexels 官方 API，發送帶有 Authorization Header 的
+                    HTTP 請求以獲取高畫質圖片資料。
+                  </td>
+                </tr>
+                <tr>
+                  <td>非同步處理 (Async/Await)</td>
+                  <td>
+                    使用 <code>axios</code> 或 <code>fetch</code> 搭配
+                    <code>async/await</code> 語法，處理非同步的 API
+                    資料請求與錯誤控管 (Error Handling)。
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Grid / Flexbox</td>
+                  <td>
+                    實作響應式 (RWD) 的<strong>瀑布流</strong>或網格佈局 (Image
+                    Grid)，確保圖片在不同螢幕尺寸下都能美觀排列。
+                  </td>
+                </tr>
+                <tr>
+                  <td>環境變數 (.env)</td>
+                  <td>
+                    使用 <code>.env</code> 檔案管理敏感的
+                    <strong>API Key</strong
+                    >，避免將金鑰直接暴露於程式碼中，提升專案安全性。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              target="_blank"
+              href="https://react-pexels-search.vercel.app"
+              class="project-link"
+              >前往專案9</a
+            >
           </div>
           <div class="project-item">
             <h2>專案10：MERN</h2>
