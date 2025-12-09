@@ -624,11 +624,71 @@
             >
           </div>
           <div class="project-item">
-            <h2>專案10：MERN</h2>
+            <h2>專案10：課程模擬網站</h2>
 
-            <img src="./images/comingsoon.png" alt="MERN" class="project-img" />
-            <p>HTML、CSS、JavaScript...</p>
-            <a target="_blank" href="#" class="project-link">尚未開放</a>
+            <img
+              src="./images/課程網站.png"
+              alt="課程模擬網站"
+              class="project-img"
+            />
+            <table class="project-tech-table">
+              <thead>
+                <tr>
+                  <th>技術 / 功能</th>
+                  <th>說明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>React.js (SPA)</td>
+                  <td>
+                    建構單頁式應用程式 (SPA)，使用
+                    <strong>React Router</strong> 管理前端路由，並透過
+                    <strong>Hooks</strong> (<code>useContext</code>,
+                    <code>useReducer</code>)
+                    進行全域狀態管理（如使用者登入狀態）。
+                  </td>
+                </tr>
+                <tr>
+                  <td>Node.js & Express</td>
+                  <td>
+                    設計 RESTful API，處理課程資料的 CRUD
+                    請求、使用者註冊登入，以及講師與學生之間的資料流。
+                  </td>
+                </tr>
+                <tr>
+                  <td>MongoDB & Mongoose</td>
+                  <td>
+                    設計複雜的資料關聯 (Schema Relations)，例如將
+                    <code>Course</code> (課程) 與 <code>Instructor</code> (講師)
+                    及 <code>Student</code> (學生) 進行關聯 (Populate)。
+                  </td>
+                </tr>
+                <tr>
+                  <td>JWT 身份驗證</td>
+                  <td>
+                    使用 <strong>JSON Web Token (JWT)</strong> 搭配
+                    <strong>Passport.js</strong> 進行無狀態 (Stateless)
+                    的身份驗證，確保 API 安全性。
+                  </td>
+                </tr>
+                <tr>
+                  <td>角色權限控制 (RBAC)</td>
+                  <td>
+                    實作角色基礎的存取控制 (Role-Based Access Control)，區分
+                    <strong>講師 (Instructor)</strong> 與
+                    <strong>學生 (Student)</strong>
+                    的權限，例如只有講師能發布課程。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              target="_blank"
+              href="https://github.com/Hsiu0308/mern-course-platform"
+              class="project-link"
+              >前往專案10</a
+            >
           </div>
         </div>
         <p class="project-end-marker">--- 網頁全端專案列表結束 ---</p>
